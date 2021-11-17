@@ -32,6 +32,13 @@ ul li {list-style: none;}
     color: #686b70;
 }
 
+/* icon */
+.fa-random{font-size: 13px;}
+.fa-caret-left{font-size: 13px;}
+.fa-play-circle{font-size: 24px; margin: 0 4px;}
+.fa-caret-right{font-size: 13px;}
+.fa-redo-alt{font-size: 13px;}
+
 @media screen and (min-width:0px){
     /*struttura*/
     #align_up_cont {
@@ -56,7 +63,7 @@ ul li {list-style: none;}
         display: flex;
         width: 100vw;
         height: 15vh;
-        background-color:#010101;
+        background-color:#282828;
     }
     /*contenuto main destra*/
     #top_strip {
@@ -131,7 +138,8 @@ ul li {list-style: none;}
         border:1px solid red;
     }
 
-    .align_func_elem {
+    /* sx */
+    .sx_func_elem {
         height: 100%;
         display: flex;
         align-items: center;
@@ -147,9 +155,34 @@ ul li {list-style: none;}
         width: 100%;
     }
 
+    .txt_now_play {
+        margin-right: 8px;
+    }
+
     .user_icon_now_play {
-        padding-left: 8px;
         color: #686b70;
+    }
+
+    /* center */
+    .center_func_elem {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .icon_ctrl_audio {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+        color: #fff;
+        
+    }
+
+    .trak_line {
+        height: 50%;
+        background-color: lightgreen;
     }
 
 }

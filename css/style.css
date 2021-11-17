@@ -80,16 +80,21 @@ ul li {list-style: none;}
         padding: 8px 24px;
     }
 
+    #playlist_box span {
+        display: block;
+        padding: 24px 0;
+    }
+
     .box_container {
+        display: flex;
+        flex-wrap: wrap;
         background-color: lightgrey;
         font-size: 0;
     }
 
     .img_box_container {
-        float: left;
         width: 50%;
-        padding-right: 8px;
-        background-color: red;
+        padding: 0 8px 8px 0;
     }
 
     .img_box_container img {
@@ -97,6 +102,7 @@ ul li {list-style: none;}
     }
 
 }
+
 /*
 @media screen and (min-width:576px){}
 @media screen and (min-width:768px){}

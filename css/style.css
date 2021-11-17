@@ -9,6 +9,10 @@
 a {text-decoration: none;}
 ul li {list-style: none;}
 
+.txt-big {
+    font-size: 24px;
+}
+
 @media screen and (min-width:0px){
     /*struttura*/
     #align_up_cont {
@@ -71,6 +75,27 @@ ul li {list-style: none;}
       width:10px;
       border-bottom:3px solid #81c431;
     }
+    /*playsist-box*/
+    #playlist_box {
+        padding: 8px 24px;
+    }
+
+    .box_container {
+        background-color: lightgrey;
+        font-size: 0;
+    }
+
+    .img_box_container {
+        float: left;
+        width: 50%;
+        padding-right: 8px;
+        background-color: red;
+    }
+
+    .img_box_container img {
+        width: 100%;
+    }
+
 }
 /*
 @media screen and (min-width:576px){}

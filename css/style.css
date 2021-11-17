@@ -24,6 +24,10 @@ ul li {list-style: none;}
     font-size: 13px;
 }
 
+.xs {
+    font-size: 9px;
+}
+
 .sub {
     color: #686b70;
 }
@@ -49,9 +53,10 @@ ul li {list-style: none;}
     }
 
     #ctrl_panel {   
+        display: flex;
         width: 100vw;
         height: 15vh;
-        background-color:lightgoldenrodyellow ;
+        background-color:#010101;
     }
     /*contenuto main destra*/
     #top_strip {
@@ -80,7 +85,7 @@ ul li {list-style: none;}
         padding:8px 16px;
     }
     
-    #tabs  a:hover::after { 
+    #tabs  a.selected_tab::after { 
       content: '';
       position:relative;
       top: 4px;
@@ -107,7 +112,7 @@ ul li {list-style: none;}
 
     .img_box_container {
         width: 50%;
-        height: 248px;
+        height: 55vw;
         padding: 0 8px 8px 0;
         text-align: center;
     }
@@ -119,6 +124,32 @@ ul li {list-style: none;}
     .img_box_container img {
         width: 100%;
         margin-bottom: 8px;
+    }
+    /* control panel */
+    #ctrl_panel > div {
+        width: 33.3%;
+        border:1px solid red;
+    }
+
+    .align_func_elem {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon_now_play {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .icon_now_play img {
+        width: 100%;
+    }
+
+    .user_icon_now_play {
+        padding-left: 8px;
+        color: #686b70;
     }
 
 }

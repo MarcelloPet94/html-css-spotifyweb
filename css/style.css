@@ -43,6 +43,28 @@
         border: 1px solid #fff;
         border-radius: 15px;
     }
+    /*tabs*/
+    #tabs {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    #tabs a {
+        color:#010101;
+        text-decoration:none;
+        padding:8px 16px;
+        background-color:gray;
+    }
+    
+    #tabs  a::after { 
+      content: '';
+      display:block;
+      margin:0 auto;
+      width:10px;
+      background-color:red;
+      border-bottom:2px solid red;
+    }
 }
 /*
 @media screen and (min-width:576px){}

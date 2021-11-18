@@ -53,10 +53,13 @@ ul li {list-style: none;}
     }
 
     #navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 10vw;
         min-width: 40px;
         height: 85vh;
-        background-color:  brown;
+        background-color: #010101;
     }
 
     main {
@@ -104,6 +107,14 @@ ul li {list-style: none;}
         width: 100%;
     }
 
+    .account {
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        background-color: #808080;
+        overflow: hidden;
+    }
+
     .only_desk {
         display: none;
     }
@@ -111,10 +122,6 @@ ul li {list-style: none;}
     .nav_btn .only_desk {
         margin-left: 4px;
         line-height: 20px;
-    }
-
-    #account {
-        align-self: center;
     }
 
     /*contenuto main destra*/
@@ -159,6 +166,7 @@ ul li {list-style: none;}
     /*playsist-box*/
     #playlist_box {
         padding: 8px 24px;
+        background-color: #141922;
     }
 
     #playlist_box .big {

@@ -25,7 +25,7 @@ ul li {list-style: none;}
 }
 
 .xs {
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .sub {
@@ -34,10 +34,13 @@ ul li {list-style: none;}
 
 /* icon */
 .fa-random{font-size: 13px;}
-.fa-caret-left{font-size: 13px;}
+.fa-caret-left{font-size: 14px;}
 .fa-play-circle{font-size: 24px; margin: 0 4px;}
-.fa-caret-right{font-size: 13px;}
+.fa-caret-right{font-size: 14px;}
 .fa-redo-alt{font-size: 13px;}
+.fa-list-ul {font-size: 13px;}
+.fa-desktop {font-size: 13px;}
+.fa-volume-up {font-size: 13px;}
 
 @media screen and (min-width:0px){
     /*struttura*/
@@ -135,7 +138,6 @@ ul li {list-style: none;}
     /* control panel */
     #ctrl_panel > div {
         width: 33.3%;
-        border:1px solid red;
     }
 
     /* sx */
@@ -191,7 +193,7 @@ ul li {list-style: none;}
         height: 4px;
         width: 100%;
         border-radius: 15px;
-        margin: 0 16px;
+        margin: 0 8px;
         background-color: #686b70;
     }
 
@@ -204,7 +206,34 @@ ul li {list-style: none;}
         background-color: #fff;
     }
 
+    .a_line:hover .b_line {
+        background-color: red;
+    }
+    /* dx */
+    .dx_func_elem {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
 
+    .vol_line {
+        margin-right: 16px;
+        width: 100px;
+    }
+
+    .icon_ctrl_vol {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        color: #fff;
+    }
+
+    .icon_ctrl_vol i {
+        margin-right: 4px;
+    }
 }
 
 /*

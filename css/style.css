@@ -7,6 +7,7 @@
 
 /* default settings */
 
+/* typography */
 a {text-decoration: none;}
 ul li {list-style: none;}
 
@@ -42,6 +43,8 @@ ul li {list-style: none;}
 .fa-desktop {font-size: 13px;}
 .fa-volume-up {font-size: 13px;}
 
+/* end default settings */
+
 @media screen and (min-width:0px){
     /*struttura*/
     #align_up_cont {
@@ -51,6 +54,7 @@ ul li {list-style: none;}
 
     #navigation {
         width: 10vw;
+        min-width: 40px;
         height: 85vh;
         background-color:  brown;
     }
@@ -68,6 +72,51 @@ ul li {list-style: none;}
         height: 15vh;
         background-color:#282828;
     }
+    /*contenuto nav sinistra*/
+
+    .nav_btn { /* contenuto non è inline, perchè? */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        width: 100%;
+        height: 40px;
+    }  
+
+    .nav_btn:hover:before {
+        content:'';
+        display: block;
+        position: relative;
+        left: -10px;
+        width: 2px;
+        height: 40px;
+        background-color: #81c431;
+    }
+    
+    .icon_cont_nav {
+        display: flex;
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon_cont_nav img {
+        width: 100%;
+    }
+
+    .only_desk {
+        display: none;
+    }
+
+    .nav_btn .only_desk {
+        margin-left: 4px;
+        line-height: 20px;
+    }
+
+    #account {
+        align-self: center;
+    }
+
     /*contenuto main destra*/
     #top_strip {
         display: flex;
@@ -79,7 +128,10 @@ ul li {list-style: none;}
 
     .main_btn {
         padding: 4px 16px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
         border: 1px solid #fff;
+        text-transform: uppercase;
         border-radius: 15px;
     }
     /*tabs*/
@@ -188,12 +240,15 @@ ul li {list-style: none;}
         height: 30%;
     }
 
+    .trak_line span {
+        margin: 0 8px 0;
+    }
+
     .a_line {
         margin: 0 auto;
         height: 4px;
         width: 100%;
         border-radius: 15px;
-        margin: 0 8px;
         background-color: #686b70;
     }
 
@@ -232,7 +287,7 @@ ul li {list-style: none;}
     }
 
     .icon_ctrl_vol i {
-        margin-right: 4px;
+        margin-right: 8px;
     }
 }
 

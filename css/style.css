@@ -295,6 +295,10 @@ ul li {list-style: none;}
         background-color: #fff;
     }
 
+    .a_line:hover .b_line {
+        background-color: #81c431;
+    }
+
     .a_line:hover .b_line::after {
         content:'';
         position: absolute;
@@ -303,8 +307,8 @@ ul li {list-style: none;}
         display: block;
         width: 10px;
         height: 10px;
-        background-color: #fff;
         border-radius: 50%;
+        background-color: #fff;
     }
     /* dx */
     .dx_func_elem {

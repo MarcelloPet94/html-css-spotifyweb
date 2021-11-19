@@ -46,6 +46,7 @@ ul li {list-style: none;}
 .fa-list-ul {font-size: 13px;}
 .fa-desktop {font-size: 13px;}
 .fa-volume-up {font-size: 13px;}
+.fa-plus-square {font-size: 40px; margin-right: 4px;}
 
 /* end default settings */
 
@@ -62,14 +63,14 @@ ul li {list-style: none;}
         justify-content: space-between;
         width: 10vw;
         min-width: 40px;
-        height: 85vh;
+        height: 90vh;
         background-color: #010101;
         padding: 0 1vw;
     }
 
     main {
         width: 90vw;
-        height: 85vh;
+        height: 90vh;
         background-color: #141922;
         overflow: scroll;
     }
@@ -79,8 +80,8 @@ ul li {list-style: none;}
         bottom: 0;
         display: flex;
         width: 100vw;
-        height: 15vh;
-        min-height: 100px;
+        height: 10vh;
+        min-height: 70px;
         background-color:#282828;
         z-index: 999;
     }
@@ -344,17 +345,21 @@ ul li {list-style: none;}
     .playlist {
         display: flex;
         flex-direction: column;
-        justify-content: left;
         height: auto;
     }
 
     .playlist span {
         text-transform: uppercase;
+        font-weight: 900;
         line-height: 40px;
     }
 
-    .playlist ul li a {
-        display: block;
+    .new_playlist a {
+        position: relative;
+        top: -7px;
+    }
+
+    .playlist ul li:not(.new_playlist) {
         padding: 8px 0;
     }
 
